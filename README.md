@@ -72,7 +72,7 @@ Works in all modern browsers that support:
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/harshrajsinh-08/cssgenerate/
    ```
 
 2. Open `index.html` in your web browser
