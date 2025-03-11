@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Grid Generator</h1>
+            <div class="grid-controls">
+                <div class="control-group">
+                    <label>Columns</label>
+                    <input type="number" id="columns" value="3" min="1" max="12">
+                </div>
+                <div class="control-group">
+                    <label>Rows</label>
+                    <input type="number" id="rows" value="3" min="1" max="12">
+                </div>
+                <div class="control-group">
+                    <label>Gap (px)</label>
+                    <input type="number" id="gap" value="20" min="0" max="100">
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="grid-actions">
+                <button id="addItem" class="add-item" title="Add new grid item">
+                    <span>+</span>
+                    Add Item
+                </button>
+            </div>
+            <div class="grid-container" id="gridContainer"></div>
+        </main>
+
+        <footer>
+            <div class="code-section">
+                <div class="code-container">
+                    <div class="code-header">
+                        <h3>CSS</h3>
+                        <button id="copyCss" class="copy-btn">Copy CSS</button>
+                    </div>
+                    <pre id="cssOutput" class="code-output"></pre>
+                </div>
+                <div class="code-container">
+                    <div class="code-header">
+                        <h3>HTML</h3>
+                        <button id="copyHtml" class="copy-btn">Copy HTML</button>
+                    </div>
+                    <pre id="htmlOutput" class="code-output"></pre>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
